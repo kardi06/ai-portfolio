@@ -1,2 +1,98 @@
 .specStory
 .cursorindexingignore
+
+# ==== Python umum ====
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.pyo
+*.so
+*.pyd
+
+# Virtual env
+.venv/
+venv/
+env/
+ENV/
+
+# Build / packaging
+build/
+dist/
+.eggs/
+*.egg-info/
+*.egg
+
+# Test & coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.cache/            # dipakai beberapa tool
+
+# Type checker / linter cache
+.mypy_cache/
+.pytype/
+.pyre/
+.ruff_cache/
+.pyright/
+
+# Jupyter
+.ipynb_checkpoints/
+.jupyter/
+
+# Logs
+*.log
+logs/
+log/
+
+# Secrets & environment files
+.env
+.env.*
+!.env.example      # biarkan contoh env tetap ter-track
+*.pem
+*.key
+*.crt
+*.p12
+
+# Editor / IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data besar (atur agar yang raw tidak ter-commit)
+data/raw/**
+data/external/**
+data/interim/**
+data/tmp/**
+data/*.zip
+data/*.7z
+data/*.tar
+data/*.gz
+data/*.bz2
+# kalau perlu, tambahkan tipe data lain yang besar:
+# data/**/*.parquet
+# data/**/*.h5
+# data/**/*.feather
+
+# (Opsional) Simpan direktori kosong dengan gitkeep
+!data/.gitkeep
+!data/raw/.gitkeep
+!data/external/.gitkeep
+!data/interim/.gitkeep
+!data/tmp/.gitkeep
+
+# Docker (opsional)
+docker/*.tar
+docker/*.img
+docker-compose.override.yml
+
+# Kaggle token (opsional)
+.kaggle/
+kaggle.json
+
+# Node (kalau ada tooling front-end kecil)
+node_modules/
