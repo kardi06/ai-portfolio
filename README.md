@@ -9,7 +9,7 @@ All project are documented and can be running
 
 
 ### 1. Machine Learning Basics
-
+- [EDA Titatic](01-ml-basics/2-eda-titanic)
 
 ---
 
